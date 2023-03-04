@@ -1,14 +1,18 @@
-import { Route, Routes } from "react-router-dom"
-import NavBar from "./components/NavBar"
+import { Route, Routes } from "react-router-dom";
+import NavBar from "./components/NavBar";
+import Steps from "./components/Steps";
+import Home from "./components/Home";
 
 function App() {
   return (
     <>
       <NavBar />
-      <h1 className="font-sans">hi</h1>
+      <Home />
+      {/* <div className="container flex justify-center border items-center ">
+      <Steps />
+      </div> */}
     </>
-      
-  )
+  );
 }
 
-export default App
+export default App;
