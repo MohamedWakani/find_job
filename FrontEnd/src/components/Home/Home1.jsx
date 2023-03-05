@@ -22,14 +22,14 @@ export default function Home1() {
           </a>
         </div>
       </div>  */}
-      <div class="main-banner" id="top">
+      <div className="main-banner" id="top">
         <video autoPlay muted loop id="bg-video">
-            <source src="../../../public/video/video.mp4" type="video/mp4" />
+            <source src="../../../video/video.mp4" type="video/mp4" />
         </video>
 
         <div className="video-overlay header-text">
-            <div className="caption">
-                <h2 className='capitalize mb-72'>TROUVEZ <em>L'EMPLOI</em> PARFAIT </h2>
+            <div className="caption sm:mt-8 md:mt-32 lg:mt-12">
+                <h2 className='mb-72'>TROUVEZ <em>L'EMPLOI</em> PARFAIT </h2>
                 <Home2 />
             </div>
         </div>

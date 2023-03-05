@@ -1,36 +1,54 @@
-import React from 'react'
-
+import React from "react";
 export default function Home2() {
   return (
-    <div className='flex flex-col ml-40  bottom-0 lg:w-3/4'>
+    <div className="lg:ml-40 lg:my-48 sm:mb-48  bottom-0 lg:w-3/4">
+      <form>
         
-<form>
-    <div class="flex">
-        <label for="search-dropdown" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Your Email</label>
-        <button id="dropdown-button" data-dropdown-toggle="dropdown" class="flex-shrink-0 z-10 inline-flex items-center py-2.5 px-4 text-sm font-medium text-center text-gray-900 bg-gray-100 border border-gray-300 dark:border-gray-700 dark:text-white rounded-l-lg hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-300 dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-800" type="button">All categories <svg aria-hidden="true" class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
-        <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
-            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdown-button">
-            <li>
-                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Shopping</a>
-            </li>
-            <li>
-                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Images</a>
-            </li>
-            <li>
-                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">News</a>
-            </li>
-            <li>
-                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Finance</a>
-            </li>
-            </ul>
-        </div>
-        <div class="relative w-full">
-            <input type="search" id="search-dropdown" class="block p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-r-lg border-l-gray-100 border-l-2 border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500" placeholder="Search" required />
-            <button type="submit" class="absolute top-0 right-0 p-2.5 text-sm font-medium text-white bg-blue-700 rounded-r-lg border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"><svg aria-hidden="true" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg></button>
-        </div>
-    </div>
-</form>
+<div className="lg:flex md:flex">
+  <span className="capitalize lg:inline-flex lg:items-center lg:px-3 lg:text-sm lg:text-gray-900 lg:bg-gray-200 lg:border lg:border-r-0 lg:border-gray-300 lg:rounded-l-md md:inline-flex md:items-center md:px-3 md:text-sm md:text-gray-900
+md:bg-gray-200
+md:border border-r-0
+md:border-gray-300
+md:rounded-l-md
+md:bg-blue-500 dark:bg-gray-600 dark:text-gray-400 dark:border-gray-600
+sm:block sm:px-3 sm:text-lg sm:text-white sm:w-48 sm:py-6 lg:py-0 md:py-0 sm:text-left
+ ls">
+    mots-clés
+  </span>
+  <input type="text" id="website-admin" className="lg:rounded-none md:rounded-none bg-gray-50 border text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm border-gray-300 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 sm:rounded is" placeholder="elonmusk"/>
+  <span className="capitalize lg:inline-flex lg:items-center lg:px-3 lg:text-sm lg:text-gray-900 lg:bg-gray-200 lg:border lg:border-r-0 lg:border-gray-300 md:inline-flex md:items-center md:px-3 md:text-sm md:text-gray-900
+md:bg-gray-200
+md:border border-r-0
+md:border-gray-300
+md:bg-blue-500 dark:bg-gray-600 dark:text-gray-400 dark:border-gray-600
+sm:block sm:items-center sm:px-3 sm:text-lg sm:text-white sm:w-48 sm:py-6 sm:text-left lg:py-0 md:py-0 ls">
+    métier
+  </span>
+  <input type="text" id="website-admin" className="md:rounded-none lg:rounded-none bg-gray-50 border text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm border-gray-300 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 sm:rounded is" placeholder="elonmusk" />
+  <button className="sm:mt-8 lg:mt-0 md:mt-0 sm:p-4 lg:p-0 md:p-0 sm:rounded-full bg-blue-500 capitalize lg:inline-flex lg:items-center lg:px-3 text-sm text-gray-900 lg:rounded-r-lg md:rounded-r-lg lg:rounded-l-none md:rounded-l-none bt">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="fill-white  w-6 h-6">
+  <path fillRule="evenodd" d="M10.5 3.75a6.75 6.75 0 100 13.5 6.75 6.75 0 000-13.5zM2.25 10.5a8.25 8.25 0 1114.59 5.28l4.69 4.69a.75.75 0 11-1.06 1.06l-4.69-4.69A8.25 8.25 0 012.25 10.5z" clipRule="evenodd" />
+</svg>
 
+  </button>
+</div>
+
+      </form>
+  <a  href="#" className="lg:inline-flex lg:items-center lg:mt-40 md:mt-32 bg-gray-800 lg:p-4 lg:rounded-full sm:inline-flex sm:items-center sm:p-3 sm:rounded-full sm:mt-8 l">
+  <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            className="fill-blue-500 animate-bounce w-6 h-6 "
+          >
+            <path
+              fillRule="evenodd"
+              d="M20.03 4.72a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 11.69l6.97-6.97a.75.75 0 011.06 0zm0 6a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 111.06-1.06L12 17.69l6.97-6.97a.75.75 0 011.06 0z"
+              clipRule="evenodd"
+            />
+          </svg>
+
+  </a>
     </div>
-  )
+  );
 }
