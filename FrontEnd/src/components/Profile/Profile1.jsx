@@ -3,9 +3,8 @@ import React, { Component } from "react";
 export default class extends Component {
   render() {
     return (
-
-      <div className="flex justify-between sm:m-10">
-        <ol className="md:my-20 relative text-gray-500 border-l border-gray-200 dark:border-gray-700 dark:text-gray-400">
+      <div className="mr-48">
+        <ol className="relative text-gray-500 border-l border-gray-200 dark:border-gray-700 dark:text-gray-400">
           <li className="mb-10 ml-6">
             <span className="absolute flex items-center justify-center w-8 h-8 bg-green-200 rounded-full -left-4 ring-4 ring-white dark:ring-gray-900 dark:bg-green-900">
               <svg
@@ -85,19 +84,7 @@ export default class extends Component {
             <p className="text-sm">Step details here</p>
           </li>
         </ol>
-        <div className="md:my-20 border border-gray-500 p-6 rounded bg-white dark:bg-slate-800 dark:text-white">
-          <div className="flex justify-center w-48 ">
-            <img
-              src="../../../img/job1.jpg"
-              alt=""
-              className="w-32 h-32  rounded-full"
-            />
-          </div>
-          <div className="flex justify-center w-48 ">
-            <h1 className="my-8 text-center text-3xl">Mohamed khassar</h1>
-          </div>
-        </div>
-        </div>
+      </div>
     );
   }
 }

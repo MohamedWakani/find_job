@@ -29,7 +29,7 @@ export default function Home1() {
 
         <div className="video-overlay header-text">
             <div className="caption sm:mt-8 md:mt-32 lg:mt-12 dark:text-gray-700">
-                <h2 className='text-slate-500 dark:text-white '>TROUVEZ <em>L'EMPLOI</em> PARFAIT </h2>
+                <h2 className='text-slate-500 dark:text-white md:mt-20 lg:mt-28'>TROUVEZ <em>L'EMPLOI</em> PARFAIT </h2>
                 <Home2 />
             </div>
         </div>

@@ -3,39 +3,24 @@ import React, { Component } from "react";
 export default class Profile2 extends Component {
   render() {
     return (
-      <div>
-        <div className="md:my-20 dark:bg-gray-700 bg-stone-400 p-8 rounded grid grid-cols-2 divide-x ">
+      <div className="lg:h-fit border-l-0 border-r-0 border-b-0 border-t-8 border-slate-900 border lg:px-8  lg:w-full lg:rounded-t-lg dark:bg-slate-700 bg-slate-200">
+        <div className="lg:my-8">
+          <h1 className="lg:text-3xl">Mohamed Khassar</h1>
+        </div>
+        <div className="lg:flex lg:justify-center lg:items-center lg:h-fit">
           <div>
-          <ul className="list-disc dark:text-white list-inside mx-16">
-            <li className="py-3">
-              <span className="font-bold text-blue-600 dark:text-blue-600">Nom</span> : Mohamed
-              Khassar
-            </li>
-            <li className="py-3">
-              <span className="font-bold text-blue-600 dark:text-blue-600">Formation</span> : Bac+3
-              
-            </li>
-            <li className="py-3">
-              <span className="font-bold text-blue-600 dark:text-blue-600">Nom</span> : Mohamed
-              Khassar
-            </li>
-          </ul>
-          </div>
-          <div>
-          <ul className="dark:text-white list-disc mx-16">
-            <li className="py-3">
-              <span className="font-bold text-blue-600 dark:text-blue-600">Nom</span> : Mohamed
-              Khassar
-            </li>
-            <li className="py-3">
-              <span className="font-bold text-blue-600 dark:text-blue-600">Formation</span> : Bac+3
-              
-            </li>
-            <li className="py-3">
-              <span className="font-bold text-blue-600 dark:text-blue-600">Nom</span> : Mohamed
-              Khassar
-            </li>
-          </ul>
+            <ul className="text-2xl list-inside capitalize">
+            <li className="flex items-center text-blue-600 dark:text-blue-500 my-5">
+        <span className="hidden sm:inline-flex sm:ml-2">description</span>
+        <svg aria-hidden="true" className="w-4 h-4 ml-2 sm:ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 5l7 7-7 7M5 5l7 7-7 7"></path></svg>
+    </li>
+            </ul>
+            <p className="lg:text-xl break-words ml-20 hover:text-gray-900 my-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repudiandae distinctio officia quisquam adipisci quia recusandae
+              facere quas fugit quidem qui dicta ex tempora, at necessitatibus
+              fugiat minus, quam reprehenderit impedit!
+            </p>
           </div>
         </div>
       </div>
