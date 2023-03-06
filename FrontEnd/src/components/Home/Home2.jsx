@@ -15,7 +15,7 @@ sm:block sm:px-3 sm:text-lg sm:text-white sm:w-48 sm:py-6 lg:py-0 md:py-0 sm:tex
  ls">
     mots-clés
   </span>
-  <input type="text" id="website-admin" className="lg:rounded-none md:rounded-none bg-gray-50 border text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm border-gray-300 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 sm:rounded is" placeholder="elonmusk"/>
+  <input type="text" id="website-admin" className="lg:rounded-none md:rounded-none bg-gray-50 border text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm border-gray-300 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 sm:rounded is" placeholder="developpemment ..............."/>
   <span className="capitalize lg:inline-flex lg:items-center lg:px-3 lg:text-sm lg:text-gray-900 lg:bg-gray-200 lg:border lg:border-r-0 lg:border-gray-300 md:inline-flex md:items-center md:px-3 md:text-sm md:text-gray-900
 md:bg-gray-200
 md:border border-r-0
