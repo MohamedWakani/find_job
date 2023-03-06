@@ -26,7 +26,7 @@ sm:block sm:items-center sm:px-3 sm:text-lg sm:text-white sm:w-48 sm:py-6 sm:tex
   </span>
   <input type="text" id="website-admin" className="md:rounded-none lg:rounded-none bg-gray-50 border text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm border-gray-300 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 sm:rounded is" placeholder="elonmusk" />
   <button className="sm:mt-8 lg:mt-0 md:mt-0 sm:p-4 lg:p-0 md:p-0 sm:rounded-full bg-blue-500 capitalize lg:inline-flex lg:items-center lg:px-3 text-sm text-gray-900 lg:rounded-r-lg md:rounded-r-lg lg:rounded-l-none md:rounded-l-none bt">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="fill-white  w-6 h-6">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="fill-white dark:fill-slate-800 w-6 h-6">
   <path fillRule="evenodd" d="M10.5 3.75a6.75 6.75 0 100 13.5 6.75 6.75 0 000-13.5zM2.25 10.5a8.25 8.25 0 1114.59 5.28l4.69 4.69a.75.75 0 11-1.06 1.06l-4.69-4.69A8.25 8.25 0 012.25 10.5z" clipRule="evenodd" />
 </svg>
 
@@ -34,7 +34,7 @@ sm:block sm:items-center sm:px-3 sm:text-lg sm:text-white sm:w-48 sm:py-6 sm:tex
 </div>
 
       </form>
-  <a  href="#" className="lg:inline-flex lg:items-center lg:mt-40 md:mt-32 bg-gray-800 lg:p-4 lg:rounded-full sm:inline-flex sm:items-center sm:p-3 sm:rounded-full sm:mt-8 l">
+  <a  href="#" className="lg:inline-flex lg:items-center lg:mt-40 md:mt-32 bg-white dark:bg-gray-800 lg:p-4 lg:rounded-full sm:inline-flex sm:items-center sm:p-3 sm:rounded-full sm:mt-8 l">
   <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
