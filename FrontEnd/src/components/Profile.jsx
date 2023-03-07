@@ -7,7 +7,7 @@ export default class Profile extends Component {
   render() {
     return (
       <>
-      <div className='container lg:mt-48 lg:flex justify-between items-center'>
+      <div className='container mt-48 flex justify-between items-center'>
         <Profile1 />
         <Profile3 />
       </div>

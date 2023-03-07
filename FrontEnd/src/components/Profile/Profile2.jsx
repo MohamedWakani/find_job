@@ -3,7 +3,7 @@ import React, { Component } from "react";
 export default class Profile2 extends Component {
   render() {
     return (
-      <div className="lg:h-fit border-l-0 border-r-0 border-b-0 border-t-8 border-slate-900 border lg:px-8  lg:w-full lg:rounded-t-lg dark:bg-slate-700 bg-slate-200">
+      <div className="h-fit border-l-0 border-r-0 border-b-0 border-t-8 border-slate-900 border lg:px-8  lg:w-full lg:rounded-t-lg dark:bg-slate-700 bg-slate-200">
         <div className="lg:my-8">
           <h1 className="lg:text-3xl">Mohamed Khassar</h1>
         </div>
