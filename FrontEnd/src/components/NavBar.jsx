@@ -1,4 +1,5 @@
 import { Fragment, useEffect, useState } from "react";
+import {useNavigate} from 'react-router-dom'
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import {
   Bars3Icon,
@@ -8,6 +9,7 @@ import {
   XMarkIcon,
 } from "@heroicons/react/24/solid";
 import { Link } from "react-router-dom";
+import axios from "../api/axios";
 
 const navigation = [
   { name: "home", href: "/", current: true },
@@ -21,7 +23,21 @@ function classNames(...classes) {
 }
 
 export default function NavBar() {
-  const [theme, setTheme] = useState(null);
+
+const nav=useNavigate()
+  const handleLogout = async () => {
+    const csrfToken = document.head.querySelector('meta[name="csrf-token"]').content;
+    try {
+      
+      await axios.post('/logout', { _token: csrfToken });
+      nav('/')
+    } catch (error) {
+      console.log(error);
+    }
+  };
+  
+
+  const [theme, setTheme] = useState('light');
 
   useEffect(() => {
     if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
@@ -57,7 +73,7 @@ export default function NavBar() {
     setTheme(theme === "dark" ? "light" : "dark");
   };
   return (
-    <Disclosure as="nav" className="bg-slate-100 dark:bg-gray-800">
+    <Disclosure as="nav" className="bg-gray-400 dark:bg-gray-800">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -81,7 +97,7 @@ export default function NavBar() {
                     alt="Your Company"
                   />
                   <img
-                    className="hidden h-8 w-auto lg:block"
+                    className="hidden h-8 w-auto lg:block mx-28"
                     src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
                     alt="Your Company"
                   />
@@ -122,9 +138,14 @@ export default function NavBar() {
                     aria-hidden="true"
                   />
                 </button>
-
+                {/* register and login */}
+                          <div className="flex justify-between w-32 mx-8">
+                            <a href="login" className="font-medium text-md dark:text-white capitalize hover:bg-gray-700 p-2 px-3 rounded bg-opacity-25">login</a>
+                            <a href="register" className="font-medium text-md dark:text-white capitalize hover:bg-gray-700 p-2 px-3 rounded bg-opacity-25">register</a>
+                            <button className="font-medium text-md dark:text-white capitalize hover:bg-gray-700 p-2 px-3 rounded bg-opacity-25" onClick={handleLogout}>logout   </button>
+                          </div>
                 {/* Profile dropdown */}
-                <Menu as="div" className="relative ml-3">
+                {/* <Menu as="div" className="relative ml-3">
                   <div>
                     <Menu.Button className="flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
                       <span className="sr-only">Open user menu</span>
@@ -186,7 +207,7 @@ export default function NavBar() {
                       </Menu.Item>
                     </Menu.Items>
                   </Transition>
-                </Menu>
+                </Menu> */}
               </div>
             </div>
           </div>

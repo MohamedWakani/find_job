@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import { Navigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import villes from "./Ville";
 export default function Home2() {
   const [mc, setMc] = useState("");
@@ -22,9 +22,9 @@ md:bg-gray-200
 md:border border-r-0
 md:border-gray-300
 md:rounded-l-md
-md:bg-blue-500 dark:bg-gray-600 dark:text-gray-400 dark:border-gray-600
+md:bg-blue-500 lg:dark:bg-gray-600 dark:text-gray-400 dark:border-gray-600
 sm:block sm:px-3 sm:text-lg sm:text-white sm:w-48 sm:py-6 lg:py-0 md:py-0 sm:text-left
- ls"
+ ls sm:w-28 sm:dark:bg-transparent md:dark:bg-gray-600"
           >
             mots-clés
           </span>
@@ -37,12 +37,14 @@ sm:block sm:px-3 sm:text-lg sm:text-white sm:w-48 sm:py-6 lg:py-0 md:py-0 sm:tex
             onChange={handelclik}
           />
           <span
-            className="capitalize lg:inline-flex lg:items-center lg:px-3 lg:text-sm lg:text-gray-900 lg:bg-gray-200 lg:border lg:border-r-0 lg:border-gray-300 md:inline-flex md:items-center md:px-3 md:text-sm md:text-gray-900
+            className="capitalize lg:inline-flex lg:items-center lg:px-3 lg:text-sm lg:text-gray-900 lg:bg-gray-200 lg:border lg:border-r-0 lg:border-gray-300 lg:rounded-l-md md:inline-flex md:items-center md:px-3 md:text-sm md:text-gray-900
 md:bg-gray-200
 md:border border-r-0
 md:border-gray-300
-md:bg-blue-500 dark:bg-gray-600 dark:text-gray-400 dark:border-gray-600
-sm:block sm:items-center sm:px-3 sm:text-lg sm:text-white sm:w-48 sm:py-6 sm:text-left lg:py-0 md:py-0 ls"
+md:rounded-l-md
+md:bg-blue-500 lg:dark:bg-gray-600 dark:text-gray-400 dark:border-gray-600
+sm:block sm:px-3 sm:text-lg sm:text-white sm:w-48 sm:py-6 lg:py-0 md:py-0 sm:text-left
+ ls sm:w-28 sm:dark:bg-transparent md:dark:bg-gray-600"
           >
             métier
           </span>
@@ -62,7 +64,7 @@ sm:block sm:items-center sm:px-3 sm:text-lg sm:text-white sm:w-48 sm:py-6 sm:tex
             type="button"
             onClick={save}
           >
-            <svg
+            <a href="#cards"><svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               fill="currentColor"
@@ -73,7 +75,7 @@ sm:block sm:items-center sm:px-3 sm:text-lg sm:text-white sm:w-48 sm:py-6 sm:tex
                 d="M10.5 3.75a6.75 6.75 0 100 13.5 6.75 6.75 0 000-13.5zM2.25 10.5a8.25 8.25 0 1114.59 5.28l4.69 4.69a.75.75 0 11-1.06 1.06l-4.69-4.69A8.25 8.25 0 012.25 10.5z"
                 clipRule="evenodd"
               />
-            </svg>
+            </svg></a>
           </button>
         </div>
       </form>

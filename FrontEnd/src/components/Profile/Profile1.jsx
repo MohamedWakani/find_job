@@ -3,8 +3,8 @@ import React, { Component } from "react";
 export default class extends Component {
   render() {
     return (
-      <div className="mr-48">
-        <ol className="relative text-gray-500 border-l border-gray-200 dark:border-gray-700 dark:text-gray-400">
+      <div className="mr-48 bg-gray-400 dark:bg-transparent p-8 rounded">
+        <ol className="relative text-white dark:text-gray-500 border-l border-gray-200 dark:border-gray-700 dark:text-gray-400">
           <li className="mb-10 ml-6">
             <span className="absolute flex items-center justify-center w-8 h-8 bg-green-200 rounded-full -left-4 ring-4 ring-white dark:ring-gray-900 dark:bg-green-900">
               <svg
