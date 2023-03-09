@@ -1,7 +1,9 @@
-import React from 'react'
+// import useAuthContext from '../../context/AuthContext'
 import Home2 from './Home2'
 
 export default function Home1() {
+  //  const {user}=useAuthContext()
+
   return (
       <div className=''>
     {/* <div>
@@ -34,6 +36,7 @@ export default function Home1() {
             </div>
         </div>
     </div>
+    
     </div>
   )
 }

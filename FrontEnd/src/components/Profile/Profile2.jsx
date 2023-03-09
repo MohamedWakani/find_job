@@ -1,11 +1,14 @@
-import React, { Component } from "react";
+import React from "react";
 
-export default class Profile2 extends Component {
-  render() {
+import useAuthContext from '../../context/AuthContext'
+export default function Profile2() {
+  const {user}=useAuthContext()
+
+
     return (
       <div className="h-fit border-l-0 border-r-0 border-b-0 border-t-8 border-slate-900 border lg:px-8  lg:w-full lg:rounded-t-lg dark:bg-slate-700 bg-slate-200">
         <div className="lg:my-8">
-          <h1 className="lg:text-3xl">Mohamed Khassar</h1>
+          <h1 className="lg:text-3xl">Welcome {user?.name} To Your Profil</h1>
         </div>
         <div className="lg:flex lg:justify-center lg:items-center lg:h-fit">
           <div>
@@ -26,4 +29,4 @@ export default class Profile2 extends Component {
       </div>
     );
   }
-}
+

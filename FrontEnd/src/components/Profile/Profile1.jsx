@@ -1,10 +1,11 @@
-import React, { Component } from "react";
+import React from "react";
 
-export default class extends Component {
-  render() {
+export default  function Profile1() {
+
     return (
-      <div className="mr-48">
-        <ol className="relative text-gray-500 border-l border-gray-200 dark:border-gray-700 dark:text-gray-400">
+      <div className="container mr-40">
+
+        <ol className="ml-6 relative text-gray-500 border-l border-gray-200 dark:border-gray-700 dark:text-gray-400">
           <li className="mb-10 ml-6">
             <span className="absolute flex items-center justify-center w-8 h-8 bg-green-200 rounded-full -left-4 ring-4 ring-white dark:ring-gray-900 dark:bg-green-900">
               <svg
@@ -87,4 +88,4 @@ export default class extends Component {
       </div>
     );
   }
-}
+
