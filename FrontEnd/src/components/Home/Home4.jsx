@@ -7,7 +7,6 @@ export default function Home4() {
 <img src='../../img/2.jpg' alt="" /><br />
 <img src='../../img/2.jpg' alt="" /><br />
 <img src='../../img/2.jpg' alt="" /><br />
-<img src='../../img/2.jpg' alt="" /><br />
     </div>
   )
 }

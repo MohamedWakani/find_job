@@ -1,17 +1,9 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import { useNavigate } from "react-router-dom";
+
 import villes from "./Ville";
 export default function Home2() {
-  const [mc, setMc] = useState("");
-  const dispatch = useDispatch();
 
-  const handelclik = (e) => {
-    setMc(e.target.value);
-  };
-  const save = () => {
-    dispatch({ type: "mc", payload: mc });
-  };
   return (
     <div className="lg:ml-40 lg:my-48 sm:mb-48  bottom-0 lg:w-3/4">
       <form>
@@ -33,8 +25,8 @@ sm:block sm:px-3 sm:text-lg sm:text-white sm:w-48 sm:py-6 lg:py-0 md:py-0 sm:tex
             id="website-admin"
             className="lg:rounded-none md:rounded-none bg-gray-50 border text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm border-gray-300 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 sm:rounded is"
             placeholder="developpemment ..............."
-            value={mc}
-            onChange={handelclik}
+            
+        
           />
           <span
             className="capitalize lg:inline-flex lg:items-center lg:px-3 lg:text-sm lg:text-gray-900 lg:bg-gray-200 lg:border lg:border-r-0 lg:border-gray-300 lg:rounded-l-md md:inline-flex md:items-center md:px-3 md:text-sm md:text-gray-900
@@ -42,6 +34,7 @@ md:bg-gray-200
 md:border border-r-0
 md:border-gray-300
 md:rounded-l-md
+lg:rounded-l-none
 md:bg-blue-500 lg:dark:bg-gray-600 dark:text-gray-400 dark:border-gray-600
 sm:block sm:px-3 sm:text-lg sm:text-white sm:w-48 sm:py-6 lg:py-0 md:py-0 sm:text-left
  ls sm:w-28 sm:dark:bg-transparent md:dark:bg-gray-600"
@@ -62,7 +55,6 @@ sm:block sm:px-3 sm:text-lg sm:text-white sm:w-48 sm:py-6 lg:py-0 md:py-0 sm:tex
           <button
             className="sm:mt-8 lg:mt-0 md:mt-0 sm:p-4 lg:p-0 md:p-0 sm:rounded-full bg-blue-500 capitalize lg:inline-flex lg:items-center lg:px-3 text-sm text-gray-900 lg:rounded-r-lg md:rounded-r-lg lg:rounded-l-none md:rounded-l-none bt"
             type="button"
-            onClick={save}
           >
             <a href="#cards"><svg
               xmlns="http://www.w3.org/2000/svg"

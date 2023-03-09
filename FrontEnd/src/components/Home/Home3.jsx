@@ -1,11 +1,10 @@
 import React from "react";
 import infos from "./List";
-import { useSelector } from "react-redux";
+
 import Home4 from "./Home4";
 export default function Home3() {
-  const mc = useSelector((state) => state.mc);
   return (
-    <div className='flex md:justify-center lg:justify-between lg:container'>
+    <div className='sm:container flex md:justify-center lg:justify-between'>
       <div>
       {infos.slice(1,5).map((info,index)=>
       <a key={index}
@@ -25,10 +24,13 @@ export default function Home3() {
             Here are the biggest enterprise technology acquisitions of 2021 so
             far, in reverse chronological order.
           </p>
+          
         </div>
       </a>
     )}
+  
     </div>
+    <Home4/>
     </div>
   );
 }
