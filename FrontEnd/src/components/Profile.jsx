@@ -7,7 +7,9 @@ export default class Profile extends Component {
     return (
       <>
       <div className='container mt-48 flex justify-between items-center'>
+
         <Profile1 />
+
         <Profile2 />
         
       </div>

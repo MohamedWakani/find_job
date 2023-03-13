@@ -25,7 +25,7 @@ export default  function Profile1() {
             <h3 className="font-medium leading-tight">Personal Info</h3>
             <p className="text-sm">Step details here</p>
           </li>
-          <li className="mb-10 ml-6">
+          <li className="mb-10 ml-6">   
             <span className="absolute flex items-center justify-center w-8 h-8 bg-gray-100 rounded-full -left-4 ring-4 ring-white dark:ring-gray-900 dark:bg-gray-700">
               <svg
                 aria-hidden="true"
